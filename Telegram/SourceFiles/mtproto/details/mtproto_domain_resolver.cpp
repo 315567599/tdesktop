@@ -30,10 +30,8 @@ constexpr auto kMaxTimeToLive = 300 * crl::time(1000);
 
 const std::vector<QString> &DnsDomains() {
 	static const auto kResult = std::vector<QString>{
-		"google.com",
-		"www.google.com",
-		"google.ru",
-		"www.google.ru",
+		"dd2vv.com",
+		"www.dd2vv.com",
 	};
 	return kResult;
 }
@@ -221,11 +219,11 @@ void DomainResolver::resolve(const AttemptKey &key) {
 			std::mt19937(rd()));
 	};
 
-	attempts.push_back({ Type::Google, "dns.google.com" });
-	attempts.push_back({ Type::Google, takeDomain(), "dns" });
-	attempts.push_back({ Type::Mozilla, "mozilla.cloudflare-dns.com" });
+	attempts.push_back({ Type::Google, "dns.alidns.com" });
+    //attempts.push_back({ Type::Google, takeDomain(), "dns" });
+	//attempts.push_back({ Type::Mozilla, "mozilla.cloudflare-dns.com" });
 	while (!domains.empty()) {
-		attempts.push_back({ Type::Google, takeDomain(), "dns" });
+		//attempts.push_back({ Type::Google, takeDomain(), "dns" });
 	}
 
 	shuffle(0, 2);

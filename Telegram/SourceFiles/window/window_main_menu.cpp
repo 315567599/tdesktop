@@ -458,8 +458,8 @@ MainMenu::MainMenu(
 	parentResized();
 
 	_telegram->setMarkedText(Ui::Text::Link(
-		u"Telegram Desktop"_q,
-		u"https://desktop.telegram.org"_q));
+		u"笛声桌面版"_q,
+		u"https://dd2vv.com"_q));
 	_telegram->setLinksTrusted();
 	_version->setMarkedText(
 		Ui::Text::Link(

@@ -31,7 +31,7 @@ rpl::producer<TextWithEntities> Text1() {
 	return tr::lng_about_text1(
 		lt_api_link,
 		tr::lng_about_text1_api(
-		) | Ui::Text::ToLink("https://core.telegram.org/api"),
+		) | Ui::Text::ToLink("https://dd2vv.com/api"),
 		Ui::Text::WithEntities);
 }
 
@@ -65,7 +65,7 @@ AboutBox::AboutBox(QWidget *parent)
 }
 
 void AboutBox::prepare() {
-	setTitle(rpl::single(u"Telegram Desktop"_q));
+	setTitle(rpl::single(u"笛声桌面版"_q));
 
 	addButton(tr::lng_close(), [this] { closeBox(); });
 
@@ -95,7 +95,7 @@ void AboutBox::resizeEvent(QResizeEvent *e) {
 
 void AboutBox::showVersionHistory() {
 	if (cRealAlphaVersion()) {
-		auto url = u"https://tdesktop.com/"_q;
+		auto url = u"https://dd2vv.com/"_q;
 		if (Platform::IsWindows32Bit()) {
 			url += u"win/%1.zip"_q;
 		} else if (Platform::IsWindows64Bit()) {
@@ -114,7 +114,7 @@ void AboutBox::showVersionHistory() {
 		getDelegate()->show(
 			Ui::MakeInformBox(
 				"The link to the current private alpha "
-				"version of Telegram Desktop was copied to the clipboard."),
+				"version of Flute Desktop was copied to the clipboard."),
 			Ui::LayerOption::CloseOther);
 	} else {
 		File::OpenUrl(Core::App().changelogLink());
@@ -130,7 +130,7 @@ void AboutBox::keyPressEvent(QKeyEvent *e) {
 }
 
 QString telegramFaqLink() {
-	const auto result = u"https://telegram.org/faq"_q;
+	const auto result = u"https://dd2vv.com/faq"_q;
 	const auto langpacked = [&](const char *language) {
 		return result + '/' + language;
 	};

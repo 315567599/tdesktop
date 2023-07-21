@@ -23,6 +23,7 @@ namespace {
 
 constexpr auto kSendNextTimeout = crl::time(800);
 
+/*
 constexpr auto kPublicKey = "\
 -----BEGIN RSA PUBLIC KEY-----\n\
 MIIBCgKCAQEAyr+18Rex2ohtVy8sroGPBwXD3DOoKCSpjDqYoXgCqB7ioln4eDCF\n\
@@ -31,6 +32,18 @@ fOBUlfXUEvM/fnKCpF46VkAftlb4VuPDeQSS/ZxZYEGqHaywlroVnXHIjgqoxiAd\n\
 9G5IzzBm+otMS/YKwmR1olzRCyEkyAEjXWqBI9Ftv5eG8m0VkBzOG655WIYdyV0H\n\
 fDK/NWcvGqa0w/nriMD6mDjKOryamw0OP9QuYgMN0C9xMW9y8SmP4h92OAWodTYg\n\
 Y1hZCxdv6cs5UnW9+PWvS+WIbkh+GaWYxwIDAQAB\n\
+-----END RSA PUBLIC KEY-----\
+"_cs;
+*/
+
+constexpr auto kPublicKey = "\
+-----BEGIN RSA PUBLIC KEY-----\n\
+MIIBCgKCAQEAm4KLNGGcg4Fv4/o90IkU2ja8XVVT3ilEN0Pn88o19lNE5LvDUpOT\n\
+Q/aGBIRjskWbWzXv/TYnvei4/7BAlnm9w8qpWPDMNanV/SCRVPDUalVU2szXo1Cl\n\
+FE0vvVKdtXSun1vkXUQGh/Pc4SN62zPTjXOAI5rqdt9sVk1Hk19AXPHbE/Hx7pGu\n\
+KrMPaFrgNQFaqrJWvf3BdBRa0fqIQc9wRjZIvHr4o7NhhcjTykz59ysbeFguXtO4\n\
+kuGJYpyjnQzhxZ26v6Zq/jgU6NX/cPlVnJJ+75evidGAA6xouIolYBonA4a327W3\n\
+gPGyBsqDqd4wBRd6QUNGWezFGB5UnvAQawIDAQAB\n\
 -----END RSA PUBLIC KEY-----\
 "_cs;
 
@@ -210,15 +223,17 @@ SpecialConfigRequest::SpecialConfigRequest(
 	};
 
 	_attempts = {};
-	_attempts.push_back({ Type::Google, "dns.google.com" });
-	_attempts.push_back({ Type::Mozilla, "mozilla.cloudflare-dns.com" });
-	_attempts.push_back({ Type::RemoteConfig, "firebaseremoteconfig" });
-	if (!_timeDoneCallback) {
-		_attempts.push_back({ Type::FireStore, "firestore" });
-		for (const auto &domain : DnsDomains()) {
-			_attempts.push_back({ Type::FireStore, domain, "firestore" });
-		}
-	}
+	_attempts.push_back({ Type::Google, "dns.alidns.com" });
+	_attempts.push_back({ Type::Google, "dd2vv.com" });
+	_attempts.push_back({ Type::Google, "www.dd2vv.com" });
+//	_attempts.push_back({ Type::Mozilla, "mozilla.cloudflare-dns.com" });
+//	_attempts.push_back({ Type::RemoteConfig, "firebaseremoteconfig" });
+//	if (!_timeDoneCallback) {
+//		_attempts.push_back({ Type::FireStore, "firestore" });
+//		for (const auto &domain : DnsDomains()) {
+//			_attempts.push_back({ Type::FireStore, domain, "firestore" });
+//		}
+//	}
 
 	shuffle(0, 2);
 	if (!_timeDoneCallback) {
@@ -296,7 +311,7 @@ void SpecialConfigRequest::performRequest(const Attempt &attempt) {
 	case Type::Google: {
 		url.setHost(attempt.data);
 		url.setPath(u"/resolve"_q);
-		url.setQuery(u"name=%1&type=ANY&random_padding=%2"_q.arg(
+		url.setQuery(u"name=%1&type=16&random_padding=%2"_q.arg(
 			_domainString,
 			GenerateDnsRandomPadding()));
 		if (!attempt.host.isEmpty()) {
