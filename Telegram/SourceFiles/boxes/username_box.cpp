@@ -41,7 +41,7 @@ namespace {
 		lt_link,
 		Ui::Text::Link(
 			'@' + QString(kUsernameAuction),
-			u"https://t.me/"_q + kUsernameAuction),
+			u"https://dd2vv.com/"_q + kUsernameAuction),
 		Ui::Text::RichLangValue);
 }
 

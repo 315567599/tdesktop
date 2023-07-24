@@ -315,10 +315,10 @@ QString Row::generateName() {
 		u"https://"_q,
 		QString()
 	).replace(
-		u"t.me/+"_q,
+		u"dd2vv.com/+"_q,
 		QString()
 	).replace(
-		u"t.me/joinchat/"_q,
+		u"dd2vv.com/joinchat/"_q,
 		QString()
 	);
 }
