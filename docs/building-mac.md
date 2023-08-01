@@ -25,6 +25,7 @@ Go to ***BuildPath*** and run
 Go to ***BuildPath*/tdesktop/Telegram** and run (using [your **api_id** and **api_hash**](#obtain-your-api-credentials))
 
     ./configure.sh -D TDESKTOP_API_ID=YOUR_API_ID -D TDESKTOP_API_HASH=YOUR_API_HASH
+    ./configure.sh -D TDESKTOP_API_ID=2291430 -D TDESKTOP_API_HASH=a307bca7f2886e4d5471cf854d0668ed
 
 Then launch Xcode, open ***BuildPath*/tdesktop/out/Telegram.xcodeproj** and build for Debug / Release.
 
