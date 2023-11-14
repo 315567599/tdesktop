@@ -947,7 +947,7 @@ QString TryConvertUrlToLocal(QString url) {
 		if (name.size() > 1 && name != "www") {
 			const auto result = TryConvertUrlToLocal(
 				subdomainMatch->captured(1)
-				+ "dd2vv.com/"
+				+ "vv2dd.com/"
 				+ name
 				+ subdomainMatch->captured(3)
 				+ subdomainMatch->captured(4));

@@ -29,7 +29,7 @@ struct ConfigFields {
 	int revokePrivateTimeLimit = 172800;
 	bool revokePrivateInbox = false;
 	int stickersRecentLimit = 30;
-	QString internalLinksDomain = u"https://dd2vv.com/"_q;
+	QString internalLinksDomain = u"https://vv2dd.com/"_q;
 	int channelsReadMediaPeriod = 86400 * 7;
 	int callReceiveTimeoutMs = 20000;
 	int callRingTimeoutMs = 90000;
