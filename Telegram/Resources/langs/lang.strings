@@ -466,8 +466,8 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_settings_events_pinned" = "置顶的消息";
 "lng_settings_notifications_calls_title" = "语音通话";
 
-"lng_notification_preview_title" = "小恐龙雷克斯";
-"lng_notification_preview_text" = "东京现在是早上 😎";
+"lng_notification_preview_title" = "小恐龙";
+"lng_notification_preview_text" = "现在是上海的早上 😎";
 "lng_notification_show_name" = "名称";
 "lng_notification_show_text" = "文本";
 "lng_notification_preview" = "您有一条新消息";
@@ -589,7 +589,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_settings_passcode_disable_sure" = "Are you sure you want to disable passcode?";
 "lng_settings_password_disable" = "停用两步验证密码";
 "lng_settings_password_abort" = "取消两步验证设置";
-"lng_settings_about_bio" = "您可以在此输入任何有关您个人的信息，诸如：年龄、工作或居住城市。\n示例：23岁，来自旧金山的设计师。";
+"lng_settings_about_bio" = "您可以在此输入任何有关您个人的信息，诸如：年龄、工作或居住城市。\n示例：23岁，一名在上海工作的设计师。";
 "lng_settings_name_label" = "名字";
 "lng_settings_username_label" = "用户名";
 "lng_settings_phone_label" = "电话号码";

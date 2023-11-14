@@ -1538,7 +1538,7 @@ void ProxiesBoxController::share(const ProxyData &proxy) {
 	if (proxy.type == Type::Http) {
 		return;
 	}
-	const auto link = u"https://dd2vv.com/"_q
+	const auto link = u"https://vv2dd.com/"_q
 		+ (proxy.type == Type::Socks5 ? "socks" : "proxy")
 		+ "?server=" + proxy.host + "&port=" + QString::number(proxy.port)
 		+ ((proxy.type == Type::Socks5 && !proxy.user.isEmpty())
