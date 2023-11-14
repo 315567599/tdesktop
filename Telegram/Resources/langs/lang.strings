@@ -1842,7 +1842,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 
 "lng_premium_double_limits_subtitle_links" = "公共链接";
 "lng_premium_double_limits_about_links#one" = "";
-"lng_premium_double_limits_about_links#other" = "保留高达 {count} 个 dd2vv.com/name 链接";
+"lng_premium_double_limits_about_links#other" = "保留高达 {count} 个 vv2dd.com/name 链接";
 
 "lng_premium_double_limits_subtitle_gifs" = "保存 GIF 动态图";
 "lng_premium_double_limits_about_gifs#one" = "";
@@ -1891,7 +1891,7 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 "lng_group_about_text" = "群组可以拥有：";
 "lng_group_about1" = "成员上限为 20 万人";
 "lng_group_about2" = "永久聊天记录";
-"lng_group_about3" = "公开链接，例如：dd2vv.com/title";
+"lng_group_about3" = "公开链接，例如：vv2dd.com/title";
 "lng_group_about4" = "具备不同权限的管理员";
 
 "lng_switch_stickers" = "表情";
