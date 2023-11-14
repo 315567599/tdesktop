@@ -1999,10 +1999,10 @@ void StickersBox::Inner::AddressField::correctValue(
 	auto removeFromBeginning = {
 		u"http://"_q,
 		u"https://"_q,
-		u"www.dd2vv.com/"_q,
+		u"www.vv2dd.com/"_q,
 		u"www.telegram.me/"_q,
 		u"www.telegram.dog/"_q,
-		u"dd2vv.com/"_q,
+		u"vv2dd.com/"_q,
 		u"telegram.me/"_q,
 		u"telegram.dog/"_q,
 		u"addstickers/"_q,

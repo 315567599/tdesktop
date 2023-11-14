@@ -664,7 +664,7 @@ TextWithEntities GenerateDefaultBannedRightsChangeText(
 				data.vid().v,
 				data.vicon_emoji_id().value_or_empty(),
 				qs(data.vtitle())),
-			u"internal:url:https://dd2vv.com/c/%1/%2"_q.arg(
+			u"internal:url:https://vv2dd.com/c/%1/%2"_q.arg(
 				peerToChannel(channel->id).bare).arg(
 					data.vid().v));
 	}, [](const MTPDforumTopicDeleted &) {
