@@ -983,7 +983,7 @@ void Notification::updateNotifyDisplay() {
 				: TextWithEntities{ name };
 		};
 		auto title = options.hideNameAndPhoto
-			? TextWithEntities{ u"笛声桌面版"_q }
+			? TextWithEntities{ u"匿信桌面版"_q }
 			: reminder
 			? tr::lng_notification_reminder(tr::now, Ui::Text::WithEntities)
 			: topicWithChat();

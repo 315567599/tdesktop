@@ -20,8 +20,8 @@ https://github.com/telegramdesktop/tdesktop/blob/master/LEGAL
 // used in Updater.cpp and Setup.iss for Windows
 constexpr auto AppId = "{53F49750-6209-4FBF-9CA8-7A333C87D1ED}"_cs;
 constexpr auto AppNameOld = "Telegram Win (Unofficial)"_cs;
-constexpr auto AppName = "笛声桌面版"_cs;
-constexpr auto AppFile = "笛声"_cs;
+constexpr auto AppName = "匿信桌面版"_cs;
+constexpr auto AppFile = "匿信"_cs;
 constexpr auto AppVersion = 4008004;
 constexpr auto AppVersionStr = "4.8.4";
 constexpr auto AppBetaVersion = false;

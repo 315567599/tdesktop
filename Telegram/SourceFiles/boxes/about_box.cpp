@@ -65,7 +65,7 @@ AboutBox::AboutBox(QWidget *parent)
 }
 
 void AboutBox::prepare() {
-	setTitle(rpl::single(u"笛声桌面版"_q));
+	setTitle(rpl::single(u"匿信桌面版"_q));
 
 	addButton(tr::lng_close(), [this] { closeBox(); });
 

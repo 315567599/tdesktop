@@ -458,7 +458,7 @@ MainMenu::MainMenu(
 	parentResized();
 
 	_telegram->setMarkedText(Ui::Text::Link(
-		u"笛声桌面版"_q,
+		u"匿信桌面版"_q,
 		u"https://dd2vv.com"_q));
 	_telegram->setLinksTrusted();
 	_version->setMarkedText(

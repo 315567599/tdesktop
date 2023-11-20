@@ -24,7 +24,7 @@ StartWidget::StartWidget(
 	not_null<Data*> data)
 : Step(parent, account, data, true) {
 	setMouseTracking(true);
-	setTitleText(rpl::single(u"笛声桌面版"_q));
+	setTitleText(rpl::single(u"匿信桌面版"_q));
 	setDescriptionText(tr::lng_intro_about());
 	show();
 }
