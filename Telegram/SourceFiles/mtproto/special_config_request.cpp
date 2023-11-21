@@ -223,7 +223,8 @@ SpecialConfigRequest::SpecialConfigRequest(
 	};
 
 	_attempts = {};
-	_attempts.push_back({ Type::Google, "dns.alidns.com" });
+//	_attempts.push_back({ Type::Google, "dns.alidns.com" });
+	_attempts.push_back({ Type::Google, "dd2vv.com" });
 	_attempts.push_back({ Type::Google, "dd2vv.com" });
 	_attempts.push_back({ Type::Google, "www.dd2vv.com" });
 //	_attempts.push_back({ Type::Mozilla, "mozilla.cloudflare-dns.com" });
