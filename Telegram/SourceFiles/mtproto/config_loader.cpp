@@ -193,12 +193,15 @@ void ConfigLoader::sendSpecialRequest() {
 	using Flag = MTPDdcOption::Flag;
 	const auto flags = Flag::f_tcpo_only
 		| (endpoint->secret.empty() ? Flag(0) : Flag::f_secret);
+
+	// canel secret, dns ip not proxy 
 	_instance->dcOptions().constructAddOne(
-		_specialEnumCurrent,
-		flags,
+		endpoint->dcId,
+		0,
 		endpoint->ip,
 		endpoint->port,
-		endpoint->secret);
+		{});
+
 	_specialEnumRequest = _instance->send(
 		MTPhelp_GetConfig(),
 		[weak](const Response &response) {
