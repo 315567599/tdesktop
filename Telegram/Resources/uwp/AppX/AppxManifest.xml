@@ -12,9 +12,9 @@
     Publisher="CN=536BC709-8EE1-4478-AF22-F0F0F26FF64A"
     Version="4.8.4.0" />
   <Properties>
-    <DisplayName>Telegram Desktop</DisplayName>
-    <PublisherDisplayName>Telegram Messenger LLP</PublisherDisplayName>
-    <Description>Telegram Desktop official messenger</Description>
+    <DisplayName>匿信桌面版</DisplayName>
+    <PublisherDisplayName>匿信桌面版 LLP</PublisherDisplayName>
+    <Description>匿信桌面版</Description>
     <Logo>Assets\logo\logo.png</Logo>
   </Properties>
   <Resources>
