@@ -29,8 +29,8 @@ struct BuiltInDc {
 };
 
 const BuiltInDc kBuiltInDcs[] = {
-	{ 1, "101.91.227.206" , 443 },
-	{ 2, "101.91.227.206" , 443 },
+	{ 1, "60.188.56.187" , 443 },
+	{ 2, "60.188.56.187" , 443 },
 };
 
 const BuiltInDc kBuiltInDcsIPv6[] = {
