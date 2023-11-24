@@ -12,9 +12,9 @@
     Publisher="CN=536BC709-8EE1-4478-AF22-F0F0F26FF64A"
     Version="4.8.4.0" />
   <Properties>
-    <DisplayName>匿信桌面版</DisplayName>
-    <PublisherDisplayName>匿信桌面版 LLP</PublisherDisplayName>
-    <Description>匿信桌面版</Description>
+    <DisplayName>Messenger</DisplayName>
+    <PublisherDisplayName>Flute Messenger Desktop LLP</PublisherDisplayName>
+    <Description>Flute Messenger Desktop</Description>
     <Logo>Assets\logo\logo.png</Logo>
   </Properties>
   <Resources>
@@ -30,10 +30,10 @@
     <Application Id="Telegram.TelegramDesktop.Store" Executable="Telegram.exe" EntryPoint="Windows.FullTrustApplication">
       <uap:VisualElements
        BackgroundColor="#1e94d0"
-       DisplayName="匿信桌面版"
+       DisplayName="Messenger"
        Square150x150Logo="Assets\logo150\logo150.png"
        Square44x44Logo="Assets\logo44\logo44.png"
-       Description="Telegram Desktop official messenger" />
+       Description="Flute Desktop official messenger" />
       <Extensions>
         <uap3:Extension Category="windows.protocol">
           <uap3:Protocol Name="tg" Parameters="-- &quot;%1&quot;" />
@@ -45,7 +45,7 @@
           <desktop:StartupTask
             TaskId="TelegramStartupTask"
             Enabled="false"
-            DisplayName="匿信桌面版" />
+            DisplayName="Messenger Desktop" />
         </desktop:Extension>
       </Extensions>
     </Application>
