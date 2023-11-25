@@ -40,7 +40,7 @@ rpl::producer<TextWithEntities> Text2() {
 		lt_gpl_link,
 		rpl::single(Ui::Text::Link(
 			"GNU GPL",
-			"https://dd2vv.com")),
+			"https://dd2vv.com/LICENSE.txt")),
 		lt_github_link,
 		rpl::single(Ui::Text::Link(
 			"dd2vv",
