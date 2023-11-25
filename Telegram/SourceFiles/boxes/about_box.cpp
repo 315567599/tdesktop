@@ -40,11 +40,11 @@ rpl::producer<TextWithEntities> Text2() {
 		lt_gpl_link,
 		rpl::single(Ui::Text::Link(
 			"GNU GPL",
-			"https://github.com/telegramdesktop/tdesktop/blob/master/LICENSE")),
+			"https://dd2vv.com")),
 		lt_github_link,
 		rpl::single(Ui::Text::Link(
-			"GitHub",
-			"https://github.com/telegramdesktop/tdesktop")),
+			"dd2vv",
+			"https://dd2vv.com")),
 		Ui::Text::WithEntities);
 }
 
@@ -130,7 +130,7 @@ void AboutBox::keyPressEvent(QKeyEvent *e) {
 }
 
 QString telegramFaqLink() {
-	const auto result = u"https://dd2vv.com/faq"_q;
+	const auto result = u"https://dd2vv.com/faq.html"_q;
 	const auto langpacked = [&](const char *language) {
 		return result + '/' + language;
 	};

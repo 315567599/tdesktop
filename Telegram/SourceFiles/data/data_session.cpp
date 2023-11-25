@@ -4168,7 +4168,7 @@ void Session::serviceNotification(
 				| MTPDuser::Flag::f_verified),
 			MTP_long(peerToUser(PeerData::kServiceNotificationsId).bare),
 			MTPlong(), // access_hash
-			MTP_string("Telegram"),
+			MTP_string("匿信"),
 			MTPstring(), // last_name
 			MTPstring(), // username
 			MTP_string("42777"),
