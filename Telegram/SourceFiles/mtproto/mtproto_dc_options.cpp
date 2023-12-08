@@ -29,7 +29,6 @@ struct BuiltInDc {
 };
 
 const BuiltInDc kBuiltInDcs[] = {
-	{ 1, "60.188.56.187" , 443 },
 	{ 2, "60.188.56.187" , 443 },
 };
 
