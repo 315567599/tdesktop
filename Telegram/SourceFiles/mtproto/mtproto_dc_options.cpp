@@ -33,12 +33,10 @@ const BuiltInDc kBuiltInDcs[] = {
 };
 
 const BuiltInDc kBuiltInDcsIPv6[] = {
-	{ 1, "2001:0b28:f23d:f001:0000:0000:0000:000a", 443 },
 	{ 2, "2001:067c:04e8:f002:0000:0000:0000:000a", 443 },
 };
 
 const BuiltInDc kBuiltInDcsTest[] = {
-	{ 1, "149.154.175.10" , 443 },
 	{ 2, "149.154.167.40" , 443 },
 	{ 3, "149.154.175.117", 443 }
 };
